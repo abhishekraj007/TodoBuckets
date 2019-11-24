@@ -2,7 +2,7 @@
 
 It's a simple todo app that has bucket system. Bucket is here like projects, first you create a bucket and then you add tasks/todo to this bucket. You can add/edit/delete both bucket and todos/tasks. For database currently I'm using `localStorage`.
 
-`Tech Stack`: React, Reedux, Bootstrap.
+#### Tech Stack: `React`, `Reedux`, `Bootstrap`.
 
 ### Hosted Link:
 
