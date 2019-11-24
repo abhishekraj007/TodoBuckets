@@ -18,6 +18,23 @@
   display: flex;
 }
 
+.todo-item-checkbox {
+  .custom-control-input:checked~.custom-control-label::before {
+    border-color    : rgba($color: #000000, $alpha: 0.4);
+    background-color: transparent;
+  }
+
+  .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+    content         : '\2713';
+    top             : -2px;
+    left            : -21px;
+    color           : rgba($color: #000000, $alpha: 0.4);
+  }
+
+}
+
+
 .todo-action-btn {
   background    : none;
   border        : none;

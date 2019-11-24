@@ -1,2 +1,0 @@
-api: OApsirp5MwJXwUsAEwHAQszV3;
-secret: fLgTOhAWmQxP9EusJNKhXUfw2x2HW2C3K9olmc2gcY73i7LEKB;

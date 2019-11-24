@@ -1,7 +1,6 @@
 import React from "react";
-import uuid from "uuid";
-import CreateBucket from "./CreateBucket";
-import Bucket from "./Bucket";
+import CreateBucket from "../Bucket/CreateBucket";
+import Bucket from "../Bucket/Bucket";
 
 import { connect } from "react-redux";
 import { createBucket } from "../../actions";
@@ -14,7 +13,6 @@ class Todo extends React.Component {
 
   renderBuckets() {
     let { buckets } = this.props.buckets;
-    console.log(this.props);
 
     if (buckets.length) {
       return buckets.map(bucket => {

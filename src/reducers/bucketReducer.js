@@ -18,13 +18,13 @@ const INITIAL_STATE = [
       {
         id: uuid(),
         bucketId: "64513c8ab9ab",
-        title: "Task 1",
+        title: "Walmart Task 1",
         completed: false
       },
       {
         id: uuid(),
         bucketId: "64513c8ab9ab",
-        title: "Task 2",
+        title: "Walmart Task 2",
         completed: true
       }
     ]
@@ -36,7 +36,13 @@ const INITIAL_STATE = [
       {
         id: uuid(),
         bucketId: "526cfa7a2b94",
-        title: "Task 1",
+        title: "Oracle Task 1",
+        completed: false
+      },
+      {
+        id: uuid(),
+        bucketId: "526cfa7a2b94",
+        title: "Oracle Task 2",
         completed: false
       }
     ]
@@ -91,6 +97,7 @@ const deleteBucketHelper = (state, action) => {
     if (bucket.id !== action.payload.bucketId) {
       return bucket;
     }
+    return null;
   });
   saveBucketsToStorage(buckets);
   return buckets;
@@ -176,6 +183,7 @@ const deleteTodoHelper = (state, action) => {
         if (todo.id !== action.payload.todoId) {
           return todo;
         }
+        return null;
       });
 
       return {

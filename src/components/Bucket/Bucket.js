@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-import TodoItem from "./TodoItem";
+import TodoItem from "../Todo/TodoItem";
 import { FaTrash } from "react-icons/fa";
 
 import { connect } from "react-redux";

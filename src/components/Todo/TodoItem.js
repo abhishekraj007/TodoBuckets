@@ -47,7 +47,6 @@ function TodoItem(props) {
               id={props.todo.id}
               onChange={handleItemCheck}
               checked={taskCompleted}
-              variant="secondary"
             />
             <div className="todo-title-wrapper">
               <label htmlFor={props.todo.id} className={todoTitleClass}>
@@ -60,14 +59,14 @@ function TodoItem(props) {
                   href="#"
                   onClick={() => todoEditHandle(true)}
                 >
-                  <FaPen />
+                  <FaPen className="icon-small" />
                 </button>
                 <button
                   className="todo-action-btn text-danger"
                   href="#"
                   onClick={() => deleteTodo()}
                 >
-                  <FaTrash />
+                  <FaTrash className="icon-small" />
                 </button>
               </div>
             </div>
